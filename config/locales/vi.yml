@@ -1,0 +1,23 @@
+vi:
+  static_pages:
+    home:
+      logo: "Ứng dụng mẫu"
+      home: "Trang Chủ"
+      help: "Trợ Giúp"
+      login: "Đăng nhập"
+      sigup_now: "Đăng kí "
+      text_home_page: "Đây là trang chủ của "
+      text_home_title: "Chào mừng đến với Sample App"
+      base_title: "Ruby on Rails Tutorial Sample App"
+      ruby_link: "Ruby on Rails Tutorial"
+      link_ruby: "https://www.ruby-lang.org/vi/"
+      to_vi: "Vietnamese"
+      to_en: "English"
+    help:
+      title: "Trợ Giúp"
+      text_help_page: "Trợ Giúp Ruby on Rails Tutorial tại "
+      text_help_ruby: "Trợ giúp Sample App,"
+      help_page: "Trang Trợ Giúp Rails Tutorial "
+      rails_tutorial: "Ruby on Rails Tutorial"
+      help_page_link: "http://www.railstutorial.org/help"
+      rails_tutorial_link: "http://www.railstutorial.org/book"
