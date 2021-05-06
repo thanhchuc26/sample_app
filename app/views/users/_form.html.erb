@@ -1,0 +1,12 @@
+<%= form_for @user, url: signup_path do |f| %>
+  <%= render "layouts/error_messages", object: @user %>
+  <%= f.label :name, t("users.name") %>
+  <%= f.text_field :name %>
+  <%= f.label :email, t("users.email") %>
+  <%= f.email_field :email %>
+  <%= f.label :password, t("users.password") %>
+  <%= f.password_field :password %>
+  <%= f.label :password_confirmation, t("user.confirmation") %>
+  <%= f.password_field :password_confirmation %>
+  <%= f.submit yield(:button_text), class: "btn btn-primary" %>
+<% end %>
