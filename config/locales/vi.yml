@@ -5,7 +5,7 @@ vi:
       home: "Trang Chủ"
       help: "Trợ Giúp"
       login: "Đăng nhập"
-      sigup_now: "Đăng kí "
+      signup_now: "Đăng kí "
       text_home_page: "Đây là trang chủ của "
       text_home_title: "Chào mừng đến với Sample App"
       base_title: "Ruby on Rails Tutorial Sample App"
@@ -21,3 +21,30 @@ vi:
       rails_tutorial: "Ruby on Rails Tutorial"
       help_page_link: "http://www.railstutorial.org/help"
       rails_tutorial_link: "http://www.railstutorial.org/book"
+    users:
+      name: "Tên"
+      email: "Thư điện tử"
+      password: "Mật khẩu"
+      password_confirm: "Xác nhận mật khẩu"
+      new_user: "Tạo tài khoản của tôi"
+      warning:
+        find_by_id: "Không tìm thấy  %{id}"
+      new:
+        new_succ: "Tạo tài khoản thành công!"
+        new_fail: "Tạo tài khoản thất bại!"
+        title:
+          signup: "Đăng kí"
+      show:
+        profile: "Hồ sơ"
+      update:
+        set: "Cài đặt "
+    sessions:
+      new:
+        title: "Đăng nhập"
+        new_acount?: "Bạn chưa tạo tài khoản?"
+        sign_path: "Đăng kí ngay"
+      destroy:
+        title: "Đăng xuất"
+    error_messages:
+      single_error: "Gồm có 1 lỗi"
+      other_error_count: "Gồm có %{number_error} lỗi"

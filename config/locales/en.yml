@@ -10,7 +10,7 @@ en:
       base_title: "Ruby on Rails Tutorial Sample App"
       ruby_link: "Ruby on Rails Tutorial"
       link_ruby: "https://www.ruby-lang.org/vi/"
-      sigup_now: "Sign up"
+      signup_now: "Sign up"
       to_vi: "Vietnamese"
       to_en: "English"
     help:
@@ -21,3 +21,30 @@ en:
       rails_tutorial: "Ruby on Rails Tutorial"
       help_page_link: "http://www.railstutorial.org/help"
       rails_tutorial_link: "http://www.railstutorial.org/book"
+    users:
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      password_confirm: "Password_confirmation"
+      new_user: "Create my account"
+      warning:
+        find_by_id: "The id %{id} could not be found"
+      new:
+        new_succ: "Create acount successfull!"
+        new_fail: "Create acount fail!"
+        title:
+          signup: "Sign up"
+      show:
+        profile: "Profile"
+      update:
+        set: "Settings"
+    sessions:
+      new:
+        title: "Log In"
+        new_acount?: "Create new acount?"
+        sign_path: "Sign up now"
+      destroy:
+        title: "Log Out"
+    error_messages:
+      single_error: "The contain single error"
+      other_error_count: "The contain %{number_error} errors"
