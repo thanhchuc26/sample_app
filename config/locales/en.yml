@@ -39,12 +39,16 @@ en:
       update:
         set: "Settings"
     sessions:
+      remember: "Remember me on this computer"
       new:
         title: "Log In"
         new_acount?: "Create new acount?"
         sign_path: "Sign up now"
       destroy:
         title: "Log Out"
+      warning:
+        log_in_succes: "Login Sucess"
+        session_error: "Incorect account & password"
     error_messages:
       single_error: "The contain single error"
       other_error_count: "The contain %{number_error} errors"

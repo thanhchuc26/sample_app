@@ -7,17 +7,17 @@ class UsersController < ApplicationController
     @user = User.find_by id: params[:id]
     return if @user
 
-    flash[:danger] = t("users.warning.find_by_id", id: params[:id])
+    flash[:danger] = t("static_pages.users.warning.find_by_id", id: params[:id])
     redirect_to root_path
   end
 
   def create
     @user = User.new user_params
     if @user.save
-      flash[:success] = t "users.new_succ"
+      flash[:success] = t "static_pages.users.new.new_succ"
       redirect_to @user
     else
-      flash.now[:danger] = t "users.new_fail"
+      flash.now[:danger] = t "static_pages.users.new.new_fail"
       render :new
     end
   end
