@@ -6,4 +6,12 @@ class User < ApplicationRecord
     format: {with: VALID_EMAIL_REGEX}, uniqueness: true
   before_save{email.downcase!}
   has_secure_password
+
+  class << self
+    def digest string
+      cost = BCrypt::Engine.cost
+      cost = BCrypt::Engine::MIN_COST if ActiveModel::SecurePassword.min_cost
+      BCrypt::Password.create string, cost: cost
+    end
+  end
 end

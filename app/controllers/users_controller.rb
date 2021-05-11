@@ -4,11 +4,11 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find_by_id params[:id]
-    if @user.nil?
-      flash[:danger] = t("users.warning.find_by_id")
-      redirect_to root_path
-    end
+    @user = User.find_by id: params[:id]
+    return if @user
+
+    flash[:danger] = t("users.warning.find_by_id", id: params[:id])
+    redirect_to root_path
   end
 
   def create

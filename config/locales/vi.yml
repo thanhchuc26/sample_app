@@ -41,7 +41,7 @@ vi:
     sessions:
       new:
         title: "Đăng nhập"
-        new_acount?: "Bạn chưa tạo tài khoản?"
+        new_account?: "Bạn chưa tạo tài khoản?"
         sign_path: "Đăng kí ngay"
       destroy:
         title: "Đăng xuất"
