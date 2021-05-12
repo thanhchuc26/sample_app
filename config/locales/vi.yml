@@ -39,12 +39,16 @@ vi:
       update:
         set: "Cài đặt "
     sessions:
+      remember: "Nhớ mật khẩu của bạn"
       new:
         title: "Đăng nhập"
         new_account?: "Bạn chưa tạo tài khoản?"
         sign_path: "Đăng kí ngay"
       destroy:
         title: "Đăng xuất"
+      warning:
+        log_in_succes: "Đăng nhập thành công"
+        session_error: "Tài khoản và mật khẩu không hợp lệ"
     error_messages:
       single_error: "Gồm có 1 lỗi"
       other_error_count: "Gồm có %{number_error} lỗi"

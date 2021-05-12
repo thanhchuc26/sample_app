@@ -2,20 +2,21 @@ class SessionsController < ApplicationController
   def new; end
 
   def create
-    user = User.find_by email: params[:sessions][:email].downcase
-    if user&.authenticate params[:sessions][:password]
-      flash[:success] = t("warning.log_in_succes", user_name: user.name)
-      log_in user
-      redirect_to user
-    else
-      flash[:danger] = t "warning.session_error"
-      render :new
-    end
+    @user = User.find_by email: params[:sessions][:email].downcase
+    login_authenticate
   end
 
-  def log_out
-    session.delete(:user_id)
-    @current_user = nil
+  def login_authenticate
+    if @user&.authenticate params[:sessions][:password]
+      flash[:success] = t("static_pages.sessions.warning.log_in_succes",
+                          user_name: @user.name)
+      log_in @user
+      params[:sessions][:remember_me] == "1" ? remember(@user) : forget(@user)
+      redirect_to @user
+    else
+      flash[:danger] = t "static_pages.sessions.warning.session_error"
+      render :new
+    end
   end
 
   def destroy
