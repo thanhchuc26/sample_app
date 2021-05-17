@@ -6,9 +6,14 @@ class User < ApplicationRecord
   validates :name, presence: true,
     length: {maximum: Settings.user.name.max_length}
   validates :email, presence: true,
-    length: {maximum: Settings.user.email.max_length},
-    format: {with: VALID_EMAIL_REGEX}, uniqueness: true
+                    length: {maximum: Settings.user.email.max_length},
+                    format: {with: VALID_EMAIL_REGEX},
+                    uniqueness: true
+  validates :password, presence: true,
+                       length: {minimum: Settings.user.password.min_length},
+                       allow_nil: true
   has_secure_password
+  scope :ordered_by_name_desc, ->{order(name: :desc)}
 
   private
 

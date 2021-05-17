@@ -6,21 +6,22 @@
         <li><%= link_to t("static_pages.home.home"), root_path %></li>
         <li><%= link_to t("static_pages.home.help"), static_pages_help_path %></li>
         <% if logged_in? %>
+          <li><%= link_to t("users.index.user"), users_path %></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <%= t "static_pages.users.show.profile" %> <b class="caret"></b>
+              <%= t "users.show.profile" %> <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
-              <li><%= link_to t("static_pages.users.show.profile"), current_user %></li>
-              <li><%= link_to t("static_pages.users.update.set"), "#" %></li>
+              <li><%= link_to t("users.show.profile"), current_user %></li>
+              <li><%= link_to t("users.update.set"), edit_user_path(current_user) %></li>
               <li class="divider"></li>
               <li>
-                <%= link_to t("static_pages.sessions.destroy.title"), logout_path, method: :delete %>
+                <%= link_to t("sessions.destroy.title"), logout_path, method: :delete %>
               </li>
             </ul>
           </li>
         <% else %>
-          <li><%= link_to t("static_pages.sessions.new.title"), login_path %></li>
+          <li><%= link_to t("sessions.new.title"), login_path %></li>
         <% end %>
       </ul>
     </nav>

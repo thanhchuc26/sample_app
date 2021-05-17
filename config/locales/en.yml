@@ -21,34 +21,47 @@ en:
       rails_tutorial: "Ruby on Rails Tutorial"
       help_page_link: "http://www.railstutorial.org/help"
       rails_tutorial_link: "http://www.railstutorial.org/book"
-    users:
-      name: "Name"
-      email: "Email"
-      password: "Password"
-      password_confirm: "Password_confirmation"
-      new_user: "Create my account"
-      warning:
-        find_by_id: "The id %{id} could not be found"
-      new:
-        new_succ: "Create acount successfull!"
-        new_fail: "Create acount fail!"
-        title:
-          signup: "Sign up"
-      show:
-        profile: "Profile"
-      update:
-        set: "Settings"
-    sessions:
-      remember: "Remember me on this computer"
-      new:
-        title: "Log In"
-        new_acount?: "Create new acount?"
-        sign_path: "Sign up now"
-      destroy:
-        title: "Log Out"
-      warning:
-        log_in_succes: "Login Sucess"
-        session_error: "Incorect account & password"
-    error_messages:
-      single_error: "The contain single error"
-      other_error_count: "The contain %{number_error} errors"
+  users:
+    name: "Name"
+    email: "Email"
+    password: "Password"
+    password_confirm: "Password_confirmation"
+    new_user: "Create my account"
+    warning:
+      find_by_id: "The id %{id} could not be found"
+      please_login: "Please login"
+      log_in_succes: "Log in successfull"
+      login_fail: "Log in fail"
+    new:
+      new_succ: "Create acount successfull!"
+      new_fail: "Create acount fail!"
+      title:
+        signup: "Sign up"
+    index:
+      user: "Users"
+      title: "All Users"
+    show:
+      profile: "Profile"
+    update:
+      set: "Settings"
+      title: "Update profile"
+      button_save: "Save change"
+      success: "Update profile successfull"
+      fail: "Update profile fail"
+  sessions:
+    remember: "Remember me on this computer"
+    new:
+      title: "Log In"
+      new_acount?: "Create new acount?"
+      sign_path: "Sign up now"
+    destroy:
+      title: "Log Out"
+      success: "Deleted success %{name_delected}"
+      fail: "Delete fail %{name_delected}"
+      confirm_delete: "Are you sure?"
+    warning:
+      log_in_succes: "Login Sucess"
+      session_error: "Incorect account & password"
+  error_messages:
+    single_error: "The contain single error"
+    other_error_count: "The contain %{number_error} errors"

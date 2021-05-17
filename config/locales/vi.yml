@@ -21,34 +21,47 @@ vi:
       rails_tutorial: "Ruby on Rails Tutorial"
       help_page_link: "http://www.railstutorial.org/help"
       rails_tutorial_link: "http://www.railstutorial.org/book"
-    users:
-      name: "Tên"
-      email: "Thư điện tử"
-      password: "Mật khẩu"
-      password_confirm: "Xác nhận mật khẩu"
-      new_user: "Tạo tài khoản của tôi"
-      warning:
-        find_by_id: "Không tìm thấy  %{id}"
-      new:
-        new_succ: "Tạo tài khoản thành công!"
-        new_fail: "Tạo tài khoản thất bại!"
-        title:
-          signup: "Đăng kí"
-      show:
-        profile: "Hồ sơ"
-      update:
-        set: "Cài đặt "
-    sessions:
-      remember: "Nhớ mật khẩu của bạn"
-      new:
-        title: "Đăng nhập"
-        new_account?: "Bạn chưa tạo tài khoản?"
-        sign_path: "Đăng kí ngay"
-      destroy:
-        title: "Đăng xuất"
-      warning:
-        log_in_succes: "Đăng nhập thành công"
-        session_error: "Tài khoản và mật khẩu không hợp lệ"
-    error_messages:
-      single_error: "Gồm có 1 lỗi"
-      other_error_count: "Gồm có %{number_error} lỗi"
+  users:
+    name: "Tên"
+    email: "Thư điện tử"
+    password: "Mật khẩu"
+    password_confirm: "Xác nhận mật khẩu"
+    new_user: "Tạo tài khoản của tôi"
+    warning:
+      find_by_id: "Không tìm thấy  %{id}"
+      please_login: "Xin mời đăng nhập"
+      log_in_succes: "Đăng nhập thành công"
+      login_fail: "Đăng nhập thất bại"
+    new:
+      new_succ: "Tạo tài khoản thành công!"
+      new_fail: "Tạo tài khoản thất bại!"
+      title:
+        signup: "Đăng kí"
+    index:
+      title: "Tất cả người dùng"
+      user: "Người dùng"
+    show:
+      profile: "Hồ sơ"
+    update:
+      set: "Cài đặt"
+      title: "Thay đổi hồ sơ"
+      button_save: "Lưu thay đổi "
+      success: "Thay đổi hồ sơ thành công "
+      fail: "Thay đổi hồ sơ thất bại"
+  sessions:
+    remember: "Nhớ mật khẩu của bạn"
+    new:
+      title: "Đăng nhập"
+      new_account?: "Bạn chưa tạo tài khoản?"
+      sign_path: "Đăng kí ngay"
+    destroy:
+      title: "Đăng xuất"
+      success: "Đã xóa thành công %{name_delected}"
+      fail: "Xóa thất bại %{name_delected}"
+      confirm_delete: "Ban chắc chắn chứ!"
+    warning:
+      log_in_succes: "Đăng nhập thành công"
+      session_error: "Tài khoản và mật khẩu không hợp lệ"
+  error_messages:
+    single_error: "Gồm có 1 lỗi"
+    other_error_count: "Gồm có %{number_error} lỗi"

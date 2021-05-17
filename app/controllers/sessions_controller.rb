@@ -8,19 +8,19 @@ class SessionsController < ApplicationController
 
   def login_authenticate
     if @user&.authenticate params[:sessions][:password]
-      flash[:success] = t("static_pages.sessions.warning.log_in_succes",
+      flash[:success] = t("sessions.warning.log_in_succes",
                           user_name: @user.name)
       log_in @user
       params[:sessions][:remember_me] == "1" ? remember(@user) : forget(@user)
       redirect_to @user
     else
-      flash[:danger] = t "static_pages.sessions.warning.session_error"
+      flash[:danger] = t "sessions.warning.session_error"
       render :new
     end
   end
 
   def destroy
-    log_out
+    logout_url
     redirect_to root_path
   end
 end
