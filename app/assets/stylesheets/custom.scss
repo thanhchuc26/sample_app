@@ -1,6 +1,6 @@
-@import 'bootstrap-sprockets';
-@import 'bootstrap';
-@import '/home/chucht96/Desktop/sample_app/app/assets/stylesheets/color.scss';
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "/home/chucht96/Desktop/sample_app/app/assets/stylesheets/color.scss";
 
 @mixin box_sizing {
   -moz-box-sizing: border-box;
@@ -135,4 +135,14 @@ input {
 #session_remember_me {
   margin-left: 0;
   width: auto;
+}
+/* Users index */
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+  overflow: auto;
+  padding: 10px 0;
+  border-bottom: 1px solid $gray;
+  }
 }

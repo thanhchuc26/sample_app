@@ -1,21 +1,21 @@
 <% provide:title, t(".title") %>
-<h1><%= t "static_pages.sessions.new.title" %></h1>
+<h1><%= t "sessions.new.title" %></h1>
 <div class="row">
 <div class="col-md-6 col-md-offset-3">
   <%= form_for(:sessions, url: login_path) do |f| %>
-  <%= f.label :email, t("static_pages.users.email") %>
+  <%= f.label :email, t("users.email") %>
   <%= f.email_field :email, class: "form-control" %>
-  <%= f.label :password, t("static_pages.users.password") %>
+  <%= f.label :password, t("users.password") %>
   <%= f.password_field :password, class: "form-control" %>
   <%= f.label :remember_me, class: "checkbox inline" do %>
     <%= f.check_box :remember_me %>
-    <span><%= t("static_pages.sessions.remember")%></span>
+    <span><%= t("sessions.remember")%></span>
     <% end %>
-  <%= f.submit t "static_pages.sessions.new.title", class: "btn btn-primary" %>
+  <%= f.submit t "sessions.new.title", class: "btn btn-primary" %>
   <% end %>
   <p>
-    <span><%= t "static_pages.sessions.new.new_account?" %></span>
-    <span><%= link_to t("static_pages.sessions.new.sign_path"), signup_path %></span>
+    <span><%= t "sessions.new.new_account?" %></span>
+    <span><%= link_to t("sessions.new.sign_path"), signup_path %></span>
   </p>
 </div>
 </div>
