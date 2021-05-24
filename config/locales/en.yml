@@ -32,6 +32,11 @@ en:
       please_login: "Please login"
       log_in_succes: "Log in successfull"
       login_fail: "Log in fail"
+      please_check_mail: "Please check your email to activate your account."
+      please_activated: "Account not activated. Check your email for the activation link."
+      activated: "Account activated!"
+      invalid_activated: "Invalid activation link"
+      subject_activated: "Account activation"
     new:
       new_succ: "Create acount successfull!"
       new_fail: "Create acount fail!"
@@ -40,6 +45,12 @@ en:
     index:
       user: "Users"
       title: "All Users"
+    email_active:
+      title: "Sample app"
+      welcome: "Hi %{name}"
+      content: "Welcome to the Sample App! Click on the link below to activate your
+      account: "
+      activate: "Activate"
     show:
       profile: "Profile"
     update:
@@ -65,3 +76,4 @@ en:
   error_messages:
     single_error: "The contain single error"
     other_error_count: "The contain %{number_error} errors"
+    not_found: "Email not found"
