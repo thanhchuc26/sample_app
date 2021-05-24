@@ -21,7 +21,7 @@ class SessionsController < ApplicationController
                           user_name: @user.name)
       log_in @user
       params[:sessions][:remember_me] == "1" ? remember(@user) : forget(@user)
-      redirect_to @user
+      redirect_back_or @user
     else
       flash[:warning] = t "users.warning.please_activated"
       redirect_to root_path
