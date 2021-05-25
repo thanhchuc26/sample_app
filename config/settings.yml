@@ -9,3 +9,4 @@ user:
   avatar_size: 50
   paginate:
     per_page: 10
+  time_reset_expire: 2

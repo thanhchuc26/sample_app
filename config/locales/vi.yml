@@ -37,6 +37,7 @@ vi:
       activated: "Tài khoản đã được kích hoạt"
       invalid_activated: "Link xác thực không hợp lệ"
       subject_activated: "Kích hoạt tài khoản"
+      user_not_found: "Không tìm thấy người dùng"
     new:
       new_succ: "Tạo tài khoản thành công!"
       new_fail: "Tạo tài khoản thất bại!"
@@ -58,6 +59,20 @@ vi:
       button_save: "Lưu thay đổi "
       success: "Thay đổi hồ sơ thành công "
       fail: "Thay đổi hồ sơ thất bại"
+  reset_password:
+    title: "Đặt lại mật khẩu "
+    guide_reset:  "Email huớng dẫn đặt lại mật khẩu đã được gửi."
+    email_not_found: "Địa chỉ mail không tìm thấy"
+    reset_succes: "Mật khẩu đã được đặt lại"
+    click_link_reset: "Hãy bấm vào đường link bên dưới để đặt lại mật khẩu:"
+    expire_time: "Đường link sẽ hết hạn trong 2h."
+    warning_not_reset: "Nếu bạn không yêu cầu đặt lại mật khẩu, 
+    vui lòng bỏ qua email này và mật khẩu của bạn sẽ được giữ nguyên."
+    click_sent_email: "Gửi đến email"
+    button: "Gửi"
+    empty_pass: "Mật khẩu không thể trống"
+    forgot_pass: "Quên mật khẩu"
+    warning_expired: "Hết hạn đặt lại mật khẩu."
   sessions:
     remember: "Nhớ mật khẩu của bạn"
     new:
