@@ -7,3 +7,19 @@
   </h2>
   <%= link_to t("static_pages.home.signup_now"), signup_path, class: "btn btn-lg btn-primary" %>
 </div>
+<% if logged_in? %>
+  <div class="row">
+    <div class="col-md-4">
+      <section class="user_info">
+        <%= render "layouts/user_info"%>
+      </section>
+      <section class="micropost_form">
+        <%= render "layouts/micropost_form"%>
+      </section>
+    </div>
+    <div class="col-md-8">
+      <h3><%= t("micropost.title")%></h3>
+      <%= render "layouts/feed" %>
+    </div>
+  </div>
+<% end %>

@@ -53,6 +53,7 @@ en:
       activate: "Activate"
     show:
       profile: "Profile"
+      view_profile: "View profile"
     update:
       set: "Settings"
       title: "Update profile"
@@ -89,5 +90,25 @@ en:
       session_error: "Incorect account & password"
   error_messages:
     single_error: "The contain single error"
-    other_error_count: "The contain %{number_error} errors"
+    other_error_count: "The form contain %{number_error} errors"
     not_found: "Email not found"
+  micropost:
+    title: " Micropost Feed"
+    posted: "Posted %{time_posted} ago "
+    validate:
+      image: "must be a valid image format"
+      size: "should be less than 5MB"
+      over_size:  "Maximum file size is 5MB. Please choose a smaller file."
+    destroy:
+      confirm_del: "You sure"
+      deleted: "Deleted successfull"
+      fail: "Delete fail"
+      delete: "Delete"
+    create:
+      title: "Post"
+      success: "Create post successfull"
+      number_post: "Have %{count} micropost"
+    warning:
+      invalid_micropost: "Not found post"
+    new:
+      micropost: "Compose new micropost..."
