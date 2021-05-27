@@ -53,6 +53,7 @@ vi:
       activate: "Kích hoạt"
     show:
       profile: "Hồ sơ"
+      view_profile: "Xem trang cá nhân"
     update:
       set: "Cài đặt"
       title: "Thay đổi hồ sơ"
@@ -89,5 +90,25 @@ vi:
       session_error: "Tài khoản và mật khẩu không hợp lệ"
   error_messages:
     single_error: "Gồm có 1 lỗi"
-    other_error_count: "Gồm có %{number_error} lỗi"
+    other_error_count: "Form có %{number_error} lỗi"
     email_not_found: "Không tìm thấy email"
+  micropost:
+    title: "Bài đăng"
+    posted: "Đã đăng %{time_posted} trước"
+    validate:
+      image: "Hình ảnh phải đúng dịnh dạng"
+      size: Phải nhỏ hơn 5MB"
+      over_size:  "Kích thước lớn nhất là 5MB. Vui long chọn file nhỏ hơn"
+    destroy:
+      confirm_del: "Bạn chắc chắn chứ"
+      deleted: "Đã xóa thành công"
+      fail: "Xóa thất bại"
+      delete: "Xóa"
+    create:
+      success: "Tạo bài đăng thành công"
+      title: "Đăng"
+      number_post: "Có %{count} bài đăng"
+    warning:
+      invalid_micropost: "Không tìm thấy bài đăng"
+    new:
+      micropost: "Viết bài đăng mới"

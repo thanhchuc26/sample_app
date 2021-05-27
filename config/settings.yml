@@ -10,3 +10,8 @@ user:
   paginate:
     per_page: 10
   time_reset_expire: 2
+micropost:
+  content:
+    max_length: 140
+  pic_size: 5
+  img_format: ["image/jpeg", "image/gif", "image/png"]

@@ -1,0 +1,11 @@
+<%= form_for @micropost do |f| %>
+  <%= render "layouts/error_messages", object: f.object %>
+  <div class="field">
+    <%= f.text_area :content, placeholder: t("micropost.new.micropost") %>
+  </div>
+  <%= f.submit t("micropost.create.title"), class: "btn btn-primary" %>
+  <span class="image">
+    <%= f.file_field :image, accept: Settings.micropost.img_format%>
+  </span>
+<% end %>
+<%= javascript_pack_tag "micropost" %>
