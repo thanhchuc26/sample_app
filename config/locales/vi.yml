@@ -28,7 +28,7 @@ vi:
     password_confirm: "Xác nhận mật khẩu"
     new_user: "Tạo tài khoản của tôi"
     warning:
-      find_by_id: "Không tìm thấy  %{id}"
+      find_by_id: "Không tìm thấy %{id}"
       please_login: "Xin mời đăng nhập"
       log_in_succes: "Đăng nhập thành công"
       login_fail: "Đăng nhập thất bại"
@@ -112,3 +112,9 @@ vi:
       invalid_micropost: "Không tìm thấy bài đăng"
     new:
       micropost: "Viết bài đăng mới"
+  relationship:
+    follow: "Theo dõi"
+    unfollow: "Bỏ theo dõi"
+    followed: "Theo dõi"
+    following: "Đang theo dõi"
+    warning: "Vui lòng thử lại"

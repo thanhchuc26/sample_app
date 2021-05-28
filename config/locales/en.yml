@@ -112,3 +112,9 @@ en:
       invalid_micropost: "Not found post"
     new:
       micropost: "Compose new micropost..."
+  relationship:
+    follow: "Follow"
+    unfollow: "Unfollow"
+    followed: "Followers"
+    following: "Following"
+    warning: "Please try again"

@@ -9,6 +9,7 @@ class Micropost < ApplicationRecord
                                    message: I18n.t("micropost.validate.image")},
                       size: {less_than: Settings.micropost.pic_size.megabytes,
                              message: I18n.t("micropost.validate.size")}
+  scope :posted_by, ->(user_ids){where user_id: user_ids}
 
   def display_image
     image.variant resize_to_limit: [500, 500]

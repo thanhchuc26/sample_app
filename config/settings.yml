@@ -15,3 +15,5 @@ micropost:
     max_length: 140
   pic_size: 5
   img_format: ["image/jpeg", "image/gif", "image/png"]
+relationship:
+  size: 30
